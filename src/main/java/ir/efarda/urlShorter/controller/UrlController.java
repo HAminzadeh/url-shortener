@@ -26,6 +26,7 @@ public class UrlController {
     @PostMapping("/shorten")
     public String shortenUrl(@RequestParam String longUrl) {
         return urlShorterService.shortenUrl(longUrl);
+
     }
 
     @GetMapping("/{shortCode}")
